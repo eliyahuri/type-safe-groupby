@@ -1,5 +1,5 @@
 {
-  "name": "type-safe-groupby",
+  "name": "better-groupby",
   "version": "1.0.0",
   "description": "A type-safe groupBy function for TypeScript",
   "main": "dist/index.js",
@@ -20,7 +20,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/type-safe-groupby.git"
+    "url": "https://github.com/eliyahuri/type-safe-groupby.git"
   },
   "files": [
     "dist"

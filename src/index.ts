@@ -8,7 +8,7 @@ const extractKey = <K extends PropertyKey, T>(
     : (item[keySelector] as K);
 };
 
-export const groupByFunction = <K extends PropertyKey, T>(
+export const groupBy = <K extends PropertyKey, T>(
   items: Iterable<T>,
   keySelector: keyof T | ((item: T, index: number) => K)
 ): Partial<Record<K, T[]>> => {

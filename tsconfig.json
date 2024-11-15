@@ -1,0 +1,19 @@
+{
+  "include": ["src/**/*.ts"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "module": "CommonJS", // CommonJS is standard for npm packages, especially for backward compatibility.
+    "moduleResolution": "node", // Ensures compatibility with node module resolution
+    "forceConsistentCasingInFileNames": true,
+    "target": "ESNext", // ESNext is future-proof, but consider ES6 or ES2020 if targeting older environments
+    "declaration": true, // Generate .d.ts files for type definitions
+    "declarationMap": true, // Allow users to trace back to source files for better debugging
+    "sourceMap": true, // Enable source maps for easier debugging
+    "removeComments": true, // Clean up final output
+    "emitDecoratorMetadata": true, // Useful if you're using decorators, especially in frameworks like NestJS
+    "experimentalDecorators": true // Enables support for decorators if you need them
+  }
+}

@@ -1,0 +1,42 @@
+# Source files
+src/
+tests/
+*.test.ts
+*.spec.ts
+__tests__/
+coverage/
+
+# Development configs
+.eslintrc*
+.prettierrc*
+.editorconfig
+tsconfig.json
+jest.config.js
+*.config.js
+.github/
+.vscode/
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Git files
+.git/
+.gitignore
+
+# Build artifacts
+dist/*.map
+*.tsbuildinfo
+
+# Environment & IDE
+.env*
+.idea/
+*.log
+*.lock
+node_modules/
+
+# Misc
+.DS_Store
+*.tgz
+.npmrc

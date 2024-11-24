@@ -8,17 +8,19 @@ const extractKey = <K extends PropertyKey, T>(
     : (item[keySelector] as unknown as K);
 };
 
-export function groupBy<
-  K extends PropertyKey,
-  T,
-  KeySelector extends keyof T | ((item: T, index: number) => K)
->(
+export function groupBy<K extends keyof T & PropertyKey, T>(
   items: Iterable<T>,
-  keySelector: KeySelector extends keyof T
-    ? T[KeySelector] extends PropertyKey
-      ? KeySelector
-      : never
-    : KeySelector
+  keySelector: K
+): Partial<Record<T[K] & PropertyKey, T[]>>;
+
+export function groupBy<K extends PropertyKey, T>(
+  items: Iterable<T>,
+  keySelector: (item: T, index: number) => K
+): Partial<Record<K, T[]>>;
+
+export function groupBy<K extends PropertyKey, T>(
+  items: Iterable<T>,
+  keySelector: keyof T | ((item: T, index: number) => K)
 ): Partial<Record<K, T[]>> {
   const result: Partial<Record<K, T[]>> = {};
 

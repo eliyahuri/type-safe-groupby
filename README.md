@@ -30,6 +30,4 @@ const nestedGrouped = groupBy(nestedDate, (item) => item.address.city); // you c
 console.log(nestedGrouped); // { NY: [ { name: 'a', age: 25, address: { city: 'NY', country: 'USA' } }, { name: 'a', age: 25, address: { city: 'NY', country: 'USA' } } ], LA: [ { name: 'b', age: 25, address: { city: 'LA', country: 'USA' } }, { name: 'b', age: 25, address: { city: 'LA', country: 'USA' } } ] }
 ```
 
-whats different from the original groupBy is that this one is typesafe, so you can use the keys of the object as a key to group by, and you can use a function to group by
-
-it will help in the intelisense and in the type checking
+whats different from the original groupBy is that this one is typesafe, so you can use the keys of the object as a key to group by

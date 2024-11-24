@@ -1,6 +1,6 @@
 {
   "name": "better-groupby",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A type-safe groupBy function for TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

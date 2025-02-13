@@ -1,6 +1,6 @@
 {
   "name": "better-groupby",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A type-safe groupBy function for TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,9 +12,19 @@
   "keywords": [
     "typescript",
     "groupby",
+    "group-by",
+    "array",
+    "collection",
+    "aggregate",
     "type-safe",
+    "typesafe",
     "utility",
-    "functional-programming"
+    "functional",
+    "data-structure",
+    "reducer",
+    "lodash",
+    "underscore",
+    "performance"
   ],
   "author": "Eliyahuri",
   "license": "MIT",
